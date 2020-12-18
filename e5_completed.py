@@ -4,22 +4,23 @@ import random
 dimension = int(input("Δώστε την διάσταση του τετραγώνου: "))
 
 count = 0
+
+#Δημιουργία των λιστών
+#Μέσα στην mainList βρίσκονται dimension αριθμός στοιχείων, με κάθε στοιχείο να περιέχει μία λίστα με dimension αριθμό στοιχείων
+mainList = []
+insideList = []
+for i in range(dimension):
+    insideList.append(" ")
+
+for i in range(dimension):
+    mainList.append(insideList[:])
+
+#Τυχαία εισαγωγή S ή O
+
+sLeft = int((dimension*dimension)/2) #sLeft = πόσα S είναι διαθέσιμα να μπουν
+oLeft = int((dimension*dimension)/2) #Ομοίως
+
 for i in range(100):
-    #Δημιουργία των λιστών
-    #Μέσα στην mainList βρίσκονται dimension αριθμός στοιχείων, με κάθε στοιχείο να περιέχει μία λίστα με dimension αριθμό στοιχείων
-    mainList = []
-    insideList = []
-    for i in range(dimension):
-        insideList.append("X")
-
-    for i in range(dimension):
-        mainList.append(insideList[:])
-
-    #Τυχαία εισαγωγή S ή O
-
-    sLeft = int((dimension*dimension)/2) #sLeft = πόσα S είναι διαθέσιμα να μπουν
-    oLeft = int((dimension*dimension)/2) #Ομοίως
-
     #Αν το τετράγωνο έχει μονό αριθμό στοιχείων, τότε διαλέγεται τυχαία ένα περισσότερο S ή O
     if (dimension*dimension) % 2 == 1:
         temp = random.randint(1,2)
@@ -138,9 +139,3 @@ for i in range(100):
         k -= 1
 
 print(count/100)
-
-
-
-
-
-
