@@ -95,8 +95,7 @@ for i in range(100):
             liLenght = len(temporaryList2)
             for v in range(liLenght-2):
                 if temporaryList2[v] == "S" and temporaryList2[v+1] == "O" and temporaryList2[v+2] == "S":
-                    if liLenght != dimension: #Έλεγχος σε περίπτωση που υπάρχει το SOS στην κύρια διαγώνιο, να μην μετρηθεί 2 φορές
-                        count += 1 
+                    count += 1 
         k -= 1
 
     # Η κάθε σειρά του πίνακα αντιστρέφεται για να γίνει ο έλεγχος της διαγωνίου από πάνω δεξία προς κάτω αριστερά 
@@ -134,8 +133,7 @@ for i in range(100):
             liLenght = len(temporaryList2)
             for v in range(liLenght-2):
                 if temporaryList2[v] == "S" and temporaryList2[v+1] == "O" and temporaryList2[v+2] == "S":
-                    if liLenght != dimension: #Έλεγχος σε περίπτωση που υπάρχει το SOS στην κύρια διαγώνιο, να μην μετρηθεί 2 φορές
-                        count += 1 
+                    count += 1 
         k -= 1
 
 print(count/100)
