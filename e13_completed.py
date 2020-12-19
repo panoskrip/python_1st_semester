@@ -13,8 +13,8 @@ try:
         return (0,0)
 
     while True:
-        x=find_pair(words)
-        if x!=(0, 0):
+        x = find_pair(words)
+        if x != (0, 0):
             # Εκτυπώνεται το ζευγάρι των λέξεων
             print(words.pop(x[1]))
             print(words.pop(x[0]))
