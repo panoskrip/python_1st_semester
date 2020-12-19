@@ -21,9 +21,3 @@ while True:
         break
 
 print(words)
-            
-            
-           
-            
-    
-        
