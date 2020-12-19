@@ -6,15 +6,15 @@ try:
 
     # Συνάρτηση για τον εντοπισμό της θέσης των λέξεων που το άθροισμα των γραμμάτων τους είναι 20
     def find_pair(li):
-        for i in range(len(li)-1):
+        for i in range( len(li)-1 ):
             for k in range(i, len(li)):
-                if len(li[i]+li[k])==20:
+                if len( li[i]+li[k] ) == 20:
                     return (i, k)
         return (0,0)
 
     while True:
         x=find_pair(words)
-        if x!=(0,0):
+        if x!=(0, 0):
             # Εκτυπώνεται το ζευγάρι των λέξεων
             print(words.pop(x[1]))
             print(words.pop(x[0]))
