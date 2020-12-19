@@ -11,7 +11,7 @@ try:
                 if len( li[i]+li[k] ) == 20:
                     return (i, k)
         return (0,0)
-
+    print("")
     while True:
         x = find_pair(words)
         if x != (0, 0):
