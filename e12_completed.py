@@ -8,7 +8,7 @@ try:
     for word in words:
         for letter in word:
             letters.append(letter)
-        #Στο τέλος κάθε λέξη τοποθετείται και ένα κενό
+        #Στο τέλος κάθε λέξης τοποθετείται και ένα κενό
         letters.append("")
     
     #Δημιουργία λίστας με κάθε στοιχείο να είναι ο αριθμός ASCII       
