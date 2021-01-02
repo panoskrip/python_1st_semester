@@ -136,4 +136,4 @@ for i in range(100):
                     count += 1 
         k -= 1
 
-print(count/100)
+print(count/10)
