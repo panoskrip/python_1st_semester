@@ -13,7 +13,7 @@ def fib(n):
     #20 τυχαίες δοκιμές
     count = 0
     for i in range(20):
-        a = random.randint(1,100)
+        a = random.randint(1,1000)
         if (a**v2) % v2 == a % v2:
             count += 1  
          
